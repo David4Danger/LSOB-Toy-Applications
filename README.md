@@ -9,9 +9,9 @@ In order to make any requests, you'll need an authentication key from Yahoo. Hea
 
 If you've set up your oauth2.json file correctly, when you run the application for the first time a webpage with a verification token will open. Agree, grab your verification code, and paste the code into the programs prompt. The yahoo_oauth library will take it from there, populating additional fields in oauth2.json (don't worry about what they mean).
 
-![Verifier1](/verifier1.png?raw=true "Agree and get your code")
+![Verifier1](/screenshots/verifier1.png?raw=true "Agree and get your code")
 
-![Verifier2](/verifier2.png?raw=true "Pasted it here")
+![Verifier2](/screenshots/verifier2.png?raw=true "Pasted it here")
 
 From here, you should be able to use the library as normal. For a cryptic and length explanation about all this authentication jazz, visit [their documentation page](https://developer.yahoo.com/fantasysports/guide/).
 
