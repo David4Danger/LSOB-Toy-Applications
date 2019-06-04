@@ -1,4 +1,5 @@
 from yahoo_oauth import OAuth2
+import xmltodict
 
 
 def oauth_session():
@@ -16,4 +17,4 @@ def make_auth_query(yahoo_sesh, query):
     if response.status_code != 200:
         print("Got a bad status on request: {}", response.status_code)
     else:
-        return response.content
+        return xmltodict.parse(response.content)
